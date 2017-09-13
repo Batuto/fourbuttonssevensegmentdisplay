@@ -49,7 +49,7 @@ void setup(){
 
 void loop(){
   PORTD = 0;
-  value = PINB;
+  value = int(PINB);
   for(i = 0; i < 7; i++)
     digitalWrite(list[value][i], HIGH);
    delay(800);
